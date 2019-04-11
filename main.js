@@ -5,8 +5,8 @@ let square;
 for (i = 0; i < 256; i++) {
     square = document.createElement(`div`);
     square.setAttribute(`class`, `square`);
+    square.addEventListener("onmouseover", activate);
     container.appendChild(square);
-    square.addEventListener("click", activate);
 }
 
 function activate() {
